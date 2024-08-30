@@ -1,0 +1,183 @@
+.tiers {
+    text-align: center;
+    background-color: beige;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.tiers .ok {
+    margin-top: 5vw;
+    /* font-size: 3vw; */
+    color: black;
+    /* font-family: "Montserrat", sans-serif; */
+    /* font-weight: 500; */
+}
+
+.tiers .all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 5vh; */
+}
+
+.tiers .all .tier {
+    width: 16vw;
+    height: 23vw;
+    background-image: linear-gradient(45deg,
+            hsl(0deg 1% 55%) 0%,
+            hsl(9deg 5% 57%) 19%,
+            hsl(16deg 10% 58%) 27%,
+            hsl(23deg 14% 59%) 34%,
+            hsl(30deg 18% 61%) 41%,
+            hsl(37deg 21% 68%) 47%,
+            hsl(45deg 26% 74%) 53%,
+            hsl(55deg 31% 80%) 59%,
+            hsl(60deg 33% 84%) 66%,
+            hsl(60deg 32% 86%) 73%,
+            hsl(60deg 32% 89%) 81%,
+            hsl(60deg 32% 91%) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4vh;
+    margin: 3vw;
+    cursor: pointer;
+    padding: 1vw 0.5vw;
+
+}
+
+.tiers .all .tier .before {
+    display: block;
+}
+
+.tiers .all .tier .after {
+    display: none;
+    justify-content: center;
+    margin-left: 2vw;
+    text-align: left;
+}
+
+.tiers .all .tier .before span {
+    color: rgb(0, 0, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+    text-shadow: 0px 0px 14px rgb(203, 160, 58);
+}
+
+.tiers .all .tier .after ul {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.15vw;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgb(152, 115, 28);
+    padding: 1.5vw;
+}
+
+.tiers .all .tier:hover .after {
+    display: block;
+}
+
+.tiers .all .tier:hover .before {
+    display: none;
+}
+
+.tiers .all .tier:nth-child(1) {
+    background-image: linear-gradient(25deg,
+            hsl(0deg 1% 64%) 0%,
+            hsl(242deg 14% 64%) 12%,
+            hsl(241deg 27% 63%) 23%,
+            hsl(240deg 40% 61%) 35%,
+            hsl(240deg 52% 59%) 46%,
+            hsl(241deg 55% 65%) 57%,
+            hsl(242deg 51% 76%) 68%,
+            hsl(245deg 47% 84%) 79%,
+            hsl(252deg 41% 92%) 90%,
+            hsl(0deg 100% 99%) 100%);
+}
+
+.tiers .all .tier:nth-child(1) .before span {
+    text-shadow: 0px 0px 14px rgba(57, 13, 158, 0.975);
+}
+
+.tiers .all .tier:nth-child(2) {
+    background-image: linear-gradient(45deg,
+            hsl(0deg 9% 91%) 0%,
+            hsl(104deg 16% 87%) 11%,
+            hsl(116deg 27% 84%) 22%,
+            hsl(120deg 35% 80%) 33%,
+            hsl(122deg 42% 75%) 44%,
+            hsl(122deg 43% 77%) 56%,
+            hsl(120deg 40% 83%) 67%,
+            hsl(115deg 37% 89%) 78%,
+            hsl(103deg 31% 94%) 89%,
+            hsl(0deg 100% 99%) 100%);
+}
+
+.tiers .all .tier:nth-child(2) .before span {
+    text-shadow: 0px 0px 14px rgb(27, 163, 61);
+}
+
+.tiers .all .tier:nth-child(3) {
+    background-image: linear-gradient(45deg,
+            hsl(0deg 17% 73%) 0%,
+            hsl(4deg 26% 71%) 11%,
+            hsl(7deg 34% 69%) 22%,
+            hsl(8deg 41% 66%) 33%,
+            hsl(10deg 48% 64%) 44%,
+            hsl(9deg 50% 68%) 56%,
+            hsl(8deg 47% 77%) 67%,
+            hsl(8deg 47% 85%) 78%,
+            hsl(6deg 48% 93%) 89%,
+            hsl(0deg 100% 99%) 100%);
+}
+
+.tiers .all .tier:nth-child(3) .before span {
+    text-shadow: 0px 0px 14px rgba(188, 38, 27, 0.975);
+}
+
+.tiers .all .tier:nth-child(4) {
+    background-image: linear-gradient(45deg,
+            hsl(0deg 5% 55%) 0%,
+            hsl(0deg 4% 60%) 7%,
+            hsl(0deg 2% 66%) 15%,
+            hsl(0deg 1% 71%) 24%,
+            hsl(214deg 10% 71%) 33%,
+            hsl(213deg 24% 70%) 43%,
+            hsl(212deg 37% 68%) 53%,
+            hsl(212deg 43% 71%) 64%,
+            hsl(215deg 38% 82%) 75%,
+            hsl(221deg 30% 91%) 87%,
+            hsl(0deg 100% 99%) 100%);
+}
+
+.tiers .all .tier:nth-child(4) .before span {
+    text-shadow: 0px 0px 14px rgba(169, 197, 219, 0.975);
+}
+
+#sponsorbtn{
+    --glow-color: rgb(204, 174, 136); 
+    --glow-spread-color: rgba(174, 123, 81, 0.781); 
+    --enhanced-glow-color: rgb(221, 192, 147); 
+    --btn-color: rgb(102, 61, 40); 
+    border: 0.25em solid var(--glow-color);
+    padding: 2rem 5rem;
+    color: var(--glow-color);
+    font-size: 150%;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    /* box-shadow: 0 0 1em 0.25em var(--glow-color),
+        0 0 3em 0.5em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color); */
+    /* text-shadow: 0 0 0.5em var(--glow-color); */
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+

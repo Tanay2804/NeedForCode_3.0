@@ -1,0 +1,31 @@
+#impmain{
+    background-color: beige;
+    text-align: center;
+    margin-top: -22px;
+    padding-top: 90px;
+}
+
+#spanimpact{
+    color: teal;
+}
+
+.impnos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#imp1h2{
+    margin-top: -15px;
+    color: rgb(10, 209, 20);
+}
+
+#imp1no{
+    color: rgb(10, 209, 20);
+}
+
+#imp1p{
+    font-style: italic;
+}

@@ -1,0 +1,68 @@
+.navbarmain {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 85px;
+    background-color: beige;
+    position: fixed; /* Makes the navbar fixed at the top */
+    top: 0; /* Aligns the navbar at the top */
+    left: 0;
+    width: 100%; /* Ensures the navbar spans the entire width */
+    z-index: 1000; /* Ensures the navbar stays above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the navbar */
+}
+
+.navtags {
+    display: flex;
+    flex-direction: row;
+    gap: 5.5vh;
+    margin-left: 290px;
+    font-size: 20px;
+}
+
+.navbarbtns {
+    margin-left: 230px;
+    margin-top: 15px;
+}
+
+#navlogin{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#navsign{
+    height: 40px;
+    width: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#navsign:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#navlogin:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#navp{
+    font-weight: 600;
+    color: black;
+}
+
+#navp:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#navlogo{
+    cursor: pointer;
+    /* height: 150px; */
+    width: 270px;
+    margin-top: -15px;
+}

@@ -1,0 +1,55 @@
+.startmain{
+    background-color: beige;
+    padding-top: 180px;
+    text-align: center;
+    align-items: center;
+}
+
+#phoneno{
+    height: 40px;
+    width: 280px;
+    padding-left: 10px;
+}
+
+#emailid,#pass,#startsubmit{
+    height: 40px;
+    width: 280px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+#startsubmit:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.container{
+    border: 2px solid black;
+    /* width: 800px; */
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    align-items: center;
+    height: 370px;
+    margin-bottom: 100px;
+}
+
+#anmoljeevan{
+    color: #003153;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    box-sizing: border-box;
+  }
+  button     {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+    box-sizing: border-box;
+  }

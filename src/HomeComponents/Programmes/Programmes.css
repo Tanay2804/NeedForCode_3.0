@@ -1,0 +1,71 @@
+.promain{
+    background-color: beige;
+    margin-top: -22px;
+    padding-top: 90px;
+}
+
+#prohead{
+    text-align: center;
+}
+
+.procolumns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* gap: 25vh; */
+}
+
+
+.procolumns1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* gap: 25vh; */
+}
+
+#proh3{
+    font-style: italic;
+}
+
+.procol1{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+#edu img{
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#proh3{
+    margin-top: -10px;
+}
+
+#proh1{
+    padding-top: 5px;
+}
+
+#beachcl{
+    margin-left: 20px;
+}
+
+#blooddon{
+    margin-left: 10px;
+}
+
+#treepl{
+    margin-left: 240px;
+}
+
+#fundra{
+    margin-left: 260px;
+}
+
+#childca{
+    margin-left: 240px;
+}
+
+#rehabil{
+    margin-left: 250px;
+}
