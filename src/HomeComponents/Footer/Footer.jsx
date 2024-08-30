@@ -45,9 +45,16 @@ const Footer = () => {
                 <div>
                     <h2 id='midsocial'>Our <span id='spanimpact'>Social</span> Media</h2>
                     <div className='footermid'>
-                        <div id='linkedin'><img src={linkedin} alt="" /></div>
-                        <div id='ig'><img src={ig} alt="" /></div>
-                        <div id='x'><img src={x} alt="" /></div>
+                        <a href="https://in.linkedin.com/in/rushaan-pai-93aa55265" target="_blank" rel="noopener noreferrer">
+                            <div><img src={linkedin} alt="LinkedIn" className="social-icon" id='linkedin'/></div>
+                        </a>
+                        {/* <div id='ig'><img src={ig} alt="" /></div> */}
+                        <a href="https://www.instagram.com/nationalngodelhi/?hl=en" target="_blank" rel="noopener noreferrer">
+                            <div><img src={ig} alt="Instagram" className="social-icon" id='ig'/></div>
+                        </a>    
+                         <a href="https://x.com/ngosindia?lang=en" target="_blank" rel="noopener noreferrer">
+                            <div><img src={x} alt="Instagram" className="social-icon" id='ig'/></div>
+                        </a>    
                     </div>
                 </div>
 

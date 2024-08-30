@@ -5,6 +5,7 @@ import { Donor } from "../models/donor.model.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import jwt from "jsonwebtoken";
+import { Query } from "mongoose";
 
 const registerUser = asyncHandler(async (req, res) => {
     const { name, email, phone, password, isVolunteer } = req.body;
@@ -220,7 +221,8 @@ const getVolunteers = asyncHandler(async (req, res) => {
             model: "gemini-pro",
         });
         const query =
-            "You are given a list of volunteers and their respective skills. Your task is to identify and return the names of volunteers whose skills match the skill mentioned in the Query, Query is Mentioned after $ symbol.Return the list of such users 1 name per line. incase of any discrepency return null in all other cases." +
+            "You are given a list of volunteers and their respective skills array after % sign. Your task is to identify and return the names of volunteers whose skills match the skill mentioned in the Query, Query is Mentioned after $ symbol.Return the list of such users 1 name per line" +
+            "%" +
             JSON.stringify(volunteers, null, 2) +
             "$" +
             Skill +
@@ -228,14 +230,12 @@ const getVolunteers = asyncHandler(async (req, res) => {
         const Result = await model.generateContent(query);
         const response = await Result.response;
         const text = response.text();
+        console.log(text);
+
         return res
             .status(200)
             .json(
-                new ApiResponse(
-                    200,
-                    text,
-                    "Volunteers Fetched Successfully",
-                ),
+                new ApiResponse(200, text, "Volunteers Fetched Successfully"),
             );
     } catch (error) {
         console.error("Error fetching volunteers:", error);

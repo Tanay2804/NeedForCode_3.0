@@ -25,18 +25,18 @@ const Start = ({ setUser }) => {
             // setUser(userData);
             // localStorage.setItem("userData", JSON.stringify(userData));
             console.log("Navigating based on user role..."); // Debugging log
-            // navigate("/");
-            // Redirect based on user role
-            if (userData.isAdmin) {
-                console.log("Redirecting to admin dashboard"); // Debugging log
-                navigate("/admin-dashboard");
-            } else if (userData.TaskAssigned) {
-                console.log("Redirecting to volunteer dashboard"); // Debugging log
-                navigate("/volunteer-dashboard");
-            } else {
-                console.log("Redirecting to donor dashboard"); // Debugging log
-                navigate("/donor-dashboard");
-            }
+            navigate("/Dashboard");
+            // // Redirect based on user role
+            // if (userData.isAdmin) {
+            //     console.log("Redirecting to admin dashboard"); // Debugging log
+            //     navigate("/admin-dashboard");
+            // } else if (userData.TaskAssigned) {
+            //     console.log("Redirecting to volunteer dashboard"); // Debugging log
+            //     navigate("/volunteer-dashboard");
+            // } else {
+            //     console.log("Redirecting to donor dashboard"); // Debugging log
+            //     navigate("/donor-dashboard");
+            // }
         } catch (error) {
             console.error("Login error:", error); // Debugging log
             setError("Login failed. Please check your credentials.");

@@ -77,7 +77,7 @@ const Sponsor = () => {
                 </div>
             </div>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSecMERLwROFMNBVpgALAywqmwVcaKf9meDeHGNMg6JeW_FEMg/viewform" target="_blank" rel="noopener noreferrer">
-                <button id='sponsorbtn'>SPONSOR US</button>
+                <button id='sponsorbtn' clas>SPONSOR US</button>
             </a>
 
         </div>
